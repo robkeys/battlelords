@@ -1,0 +1,122 @@
+[
+  {
+    "value_min":     1,
+    "value_max":     10,
+    "power_points":  null,
+    "languages":     null,
+    "skill_bonus":   -100,
+    "flavor_text":   "Individual is a vegetable. Plant him"
+  },
+  {
+    "value_min":     11,
+    "value_max":     20,
+    "power_points":  null,
+    "languages":     0,
+    "skill_bonus":   -75,
+    "flavor_text":   "You drool a lot and look slack-eyed and silly"
+  },
+  {
+    "value_min":     21,
+    "value_max":     30,
+    "power_points":  null,
+    "languages":     0,
+    "skill_bonus":   -50,
+    "flavor_text":   "Minimum I.Q. for learning occupational skills (it is still hopeless)"
+  },
+  {
+    "value_min":     31,
+    "value_max":     40,
+    "power_points":  0,
+    "languages":     1,
+    "skill_bonus":   -25,
+    "flavor_text":   "You are quite stupid"
+  },
+  {
+    "value_min":     41,
+    "value_max":     50,
+    "power_points":  0,
+    "languages":     1,
+    "skill_bonus":   0,
+    "flavor_text":   "Minimum real I.Q. for most skills"
+  },
+  {
+    "value_min":     51,
+    "value_max":     60,
+    "power_points":  1,
+    "languages":     1,
+    "skill_bonus":   0,
+    "flavor_text":   "Occupations in sciences"
+  },
+  {
+    "value_min":     61,
+    "value_max":     70,
+    "power_points":  1,
+    "languages":     2,
+    "skill_bonus":   5,
+    "flavor_text":   "Occupations in cybernetics and engineering"
+  },
+  {
+    "value_min":     71,
+    "value_max":     80,
+    "power_points":  2,
+    "languages":     4,
+    "skill_bonus":   10,
+    "flavor_text":   "Occupations in alien technologies"
+  },
+  {
+    "value_min":     81,
+    "value_max":     90,
+    "power_points":  2,
+    "languages":     6,
+    "skill_bonus":   15,
+    "flavor_text":   "Maximum I.Q. for both Pythons"
+  },
+  {
+    "value_min":     91,
+    "value_max":     100,
+    "power_points":  3,
+    "languages":     8,
+    "skill_bonus":   20,
+    "flavor_text":   "Maximum I.Q. for an Orion"
+  },
+  {
+    "value_min":     101,
+    "value_max":     110,
+    "power_points":  3,
+    "languages":     10,
+    "skill_bonus":   25,
+    "flavor_text":   "Maximum I.Q. for a Human or Eridani"
+  },
+  {
+    "value_min":     111,
+    "value_max":     120,
+    "power_points":  4,
+    "languages":     12,
+    "skill_bonus":   30,
+    "flavor_text":   "Maximum I.Q. for a Gen or Cizerack"
+  },
+  {
+    "value_min":     121,
+    "value_max":     130,
+    "power_points":  4,
+    "languages":     14,
+    "skill_bonus":   35,
+    "flavor_text":   "Maximum I.Q. for Zen Rigeln or a Phentari"
+  },
+  {
+    "value_min":     131,
+    "value_max":     140,
+    "power_points":  5,
+    "languages":     16,
+    "skill_bonus":   40,
+    "flavor_text":   "Maximum I.Q. for a Chatilian"
+  },
+  {
+    "value_min":     141,
+    "value_max":     150,
+    "power_points":  5,
+    "languages":     18,
+    "skill_bonus":   45,
+    "flavor_text":   "Maximum I.Q. for a Mutzachan"
+  }
+]

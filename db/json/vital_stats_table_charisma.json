@@ -1,0 +1,128 @@
+[
+  {
+    "value_min" : -21,
+    "value_max" : -30,
+    "reaction_modifier" : -50,
+    "loyalty_base" : -30,
+    "flavor_text" : "You are fuggly"
+  },
+  {
+    "value_min" : -11,
+    "value_max" : -20,
+    "reaction_modifier" : -40,
+    "loyalty_base" : -20,
+    "flavor_text" : "You are scary looking"
+  },
+  {
+    "value_min" : -1,
+    "value_max" : -10,
+    "reaction_modifier" : -30,
+    "loyalty_base" : -10,
+    "flavor_text" : "Gruesome"
+  },
+  {
+    "value_min" : 0,
+    "value_max" : 10,
+    "reaction_modifier" : -20,
+    "loyalty_base" : 0,
+    "flavor_text" : "Disgusting"
+  },
+  {
+    "value_min" : 11,
+    "value_max" : 20,
+    "reaction_modifier" : -15,
+    "loyalty_base" : 10,
+    "flavor_text" : "You are ugly as !%$&*"
+  },
+  {
+    "value_min" : 21,
+    "value_max" : 30,
+    "reaction_modifier" : -10,
+    "loyalty_base" : 20,
+    "flavor_text" : "Not very attractive"
+  },
+  {
+    "value_min" : 31,
+    "value_max" : 40,
+    "reaction_modifier" : -5,
+    "loyalty_base" : 30,
+    "flavor_text" : "Depends on lighting conditions"
+  },
+  {
+    "value_min" : 41,
+    "value_max" : 50,
+    "reaction_modifier" : 0,
+    "loyalty_base" : 40,
+    "flavor_text" : "You’re about average"
+  },
+  {
+    "value_min" : 51,
+    "value_max" : 60,
+    "reaction_modifier" : 5,
+    "loyalty_base" : 50,
+    "flavor_text" : "You look cute"
+  },
+  {
+    "value_min" : 61,
+    "value_max" : 70,
+    "reaction_modifier" : 10,
+    "loyalty_base" : 60,
+    "flavor_text" : "You are alluring"
+  },
+  {
+    "value_min" : 71,
+    "value_max" : 80,
+    "reaction_modifier" : 15,
+    "loyalty_base" : 70,
+    "flavor_text" : "You look Hot"
+  },
+  {
+    "value_min" : 81,
+    "value_max" : 90,
+    "reaction_modifier" : 20,
+    "loyalty_base" : 80,
+    "flavor_text" : "Magnetic"
+  },
+  {
+    "value_min" : 91,
+    "value_max" : 100,
+    "reaction_modifier" : 25,
+    "loyalty_base" : 90,
+    "flavor_text" : "You look amazing. I am drooling"
+  },
+  {
+    "value_min" : 101,
+    "value_max" : 110,
+    "reaction_modifier" : 30,
+    "loyalty_base" : 100,
+    "flavor_text" : "Stunning"
+  },
+  {
+    "value_min" : 111,
+    "value_max" : 120,
+    "reaction_modifier" : 35,
+    "loyalty_base" : 110,
+    "flavor_text" : "People look upon you with deep awe"
+  },
+  {
+    "value_min" : 121,
+    "value_max" : 130,
+    "reaction_modifier" : 40,
+    "loyalty_base" : 120,
+    "flavor_text" : "My number is . . ."
+  },
+  {
+    "value_min" : 131,
+    "value_max" : 140,
+    "reaction_modifier" : 45,
+    "loyalty_base" : 130,
+    "flavor_text" : "Wow"
+  },
+  {
+    "value_min" : 141,
+    "value_max" : 150,
+    "reaction_modifier" : 50,
+    "loyalty_base" : 140,
+    "flavor_text" : "The definition of a 12"
+  }
+]

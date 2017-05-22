@@ -1,0 +1,2 @@
+class VitalStatsTableCharisma < ApplicationRecord
+end

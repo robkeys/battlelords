@@ -1,0 +1,191 @@
+[
+  {
+    "value_min" : 1,
+    "value_max" : 14,
+    "initiative_modifier" : 25,
+    "defensive_modifier" : 100,
+    "skill_bonus" : -90,
+    "melee_attack_bonus" : 25,
+    "flavor_text" : "Character is virtually helpless and immobile"
+  },
+  {
+    "value_min" : 15,
+    "value_max" : 22,
+    "initiative_modifier" : 10,
+    "defensive_modifier" : 80,
+    "skill_bonus" : -70,
+    "melee_attack_bonus" : -15,
+    "flavor_text" : "Character can be a Chatilian or a Python Lizard"
+  },
+  {
+    "value_min" : 23,
+    "value_max" : 30,
+    "initiative_modifier" : 8,
+    "defensive_modifier" : 60,
+    "skill_bonus" : -50,
+    "melee_attack_bonus" : -10,
+    "flavor_text" : "Minimum agility for Phentari and Ram Pythons"
+  },
+  {
+    "value_min" : 31,
+    "value_max" : 38,
+    "initiative_modifier" : 4,
+    "defensive_modifier" : 40,
+    "skill_bonus" : -25,
+    "melee_attack_bonus" : -6,
+    "flavor_text" : "Minimum agility for an Eridani or an Orion Rogue"
+  },
+  {
+    "value_min" : 39,
+    "value_max" : 46,
+    "initiative_modifier" : 2,
+    "defensive_modifier" : 20,
+    "skill_bonus" : -15,
+    "melee_attack_bonus" : -2,
+    "flavor_text" : "Minimum agility for a Zen Rigeln Human or a Gen-Human"
+  },
+  {
+    "value_min" : 47,
+    "value_max" : 54,
+    "initiative_modifier" : 0,
+    "defensive_modifier" : 0,
+    "skill_bonus" : -5,
+    "melee_attack_bonus" : 0,
+    "flavor_text" : "Minimum agility for a Mutzachan"
+  },
+  {
+    "value_min" : 55,
+    "value_max" : 62,
+    "initiative_modifier" : 0,
+    "defensive_modifier" : 0,
+    "skill_bonus" : 0,
+    "melee_attack_bonus" : 0,
+    "flavor_text" : "Minimum agility for Cizerack"
+  },
+  {
+    "value_min" : 63,
+    "value_max" : 70,
+    "initiative_modifier" : 0,
+    "defensive_modifier" : 0,
+    "skill_bonus" : 0,
+    "melee_attack_bonus" : 2,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 71,
+    "value_max" : 78,
+    "initiative_modifier" : 0,
+    "defensive_modifier" : -2,
+    "skill_bonus" : 2,
+    "melee_attack_bonus" : 4,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 79,
+    "value_max" : 86,
+    "initiative_modifier" : -1,
+    "defensive_modifier" : -4,
+    "skill_bonus" : 4,
+    "melee_attack_bonus" : 6,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 87,
+    "value_max" : 94,
+    "initiative_modifier" : -1,
+    "defensive_modifier" : -6,
+    "skill_bonus" : 6,
+    "melee_attack_bonus" : 8,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 95,
+    "value_max" : 102,
+    "initiative_modifier" : -2,
+    "defensive_modifier" : -8,
+    "skill_bonus" : 8,
+    "melee_attack_bonus" : 10,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 103,
+    "value_max" : 110,
+    "initiative_modifier" : -2,
+    "defensive_modifier" : -10,
+    "skill_bonus" : 10,
+    "melee_attack_bonus" : 12,
+    "flavor_text" : "Maximum agility for a Python"
+  },
+  {
+    "value_min" : 111,
+    "value_max" : 118,
+    "initiative_modifier" : -3,
+    "defensive_modifier" : -12,
+    "skill_bonus" : 12,
+    "melee_attack_bonus" : 14,
+    "flavor_text" : "Maximum agility for a Mazian"
+  },
+  {
+    "value_min" : 119,
+    "value_max" : 126,
+    "initiative_modifier" : -3,
+    "defensive_modifier" : -14,
+    "skill_bonus" : 14,
+    "melee_attack_bonus" : 16,
+    "flavor_text" : "Maximum agility for an Eridani or an Orion Rogue"
+  },
+  {
+    "value_min" : 127,
+    "value_max" : 130,
+    "initiative_modifier" : -4,
+    "defensive_modifier" : -16,
+    "skill_bonus" : 16,
+    "melee_attack_bonus" : 18,
+    "flavor_text" : "Maximum agility for a Zen Rigeln Chatilian and a Mutzachan"
+  },
+  {
+    "value_min" : 131,
+    "value_max" : 134,
+    "initiative_modifier" : -4,
+    "defensive_modifier" : -18,
+    "skill_bonus" : 18,
+    "melee_attack_bonus" : 20,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 135,
+    "value_max" : 138,
+    "initiative_modifier" : -5,
+    "defensive_modifier" : -20,
+    "skill_bonus" : 20,
+    "melee_attack_bonus" : 22,
+    "flavor_text" : "Maximum agility for a Phentari"
+  },
+  {
+    "value_min" : 139,
+    "value_max" : 142,
+    "initiative_modifier" : -5,
+    "defensive_modifier" : -22,
+    "skill_bonus" : 22,
+    "melee_attack_bonus" : 24,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 143,
+    "value_max" : 146,
+    "initiative_modifier" : -6,
+    "defensive_modifier" : -24,
+    "skill_bonus" : 24,
+    "melee_attack_bonus" : 26,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 147,
+    "value_max" : 150,
+    "initiative_modifier" : -7,
+    "defensive_modifier" : -26,
+    "skill_bonus" : 26,
+    "melee_attack_bonus" : 28,
+    "flavor_text" : "Maximum agility for a Cizerack"
+  }
+]

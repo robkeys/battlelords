@@ -1,0 +1,92 @@
+[
+  {
+    "value_min" : 1,
+    "value_max" : 10,
+    "survival_matrix_adjust" : -25,
+    "flavor_text" : "You define the concept moron"
+  },
+  {
+    "value_min" : 11,
+    "value_max" : 20,
+    "survival_matrix_adjust" : -20,
+    "flavor_text" : "You are absolutely clueless"
+  },
+  {
+    "value_min" : 21,
+    "value_max" : 30,
+    "survival_matrix_adjust" : -15,
+    "flavor_text" : "The title Bone Head seems fitting"
+  },
+  {
+    "value_min" : 31,
+    "value_max" : 40,
+    "survival_matrix_adjust" : -10,
+    "flavor_text" : "Not very swift"
+  },
+  {
+    "value_min" : 41,
+    "value_max" : 50,
+    "survival_matrix_adjust" : -5,
+    "flavor_text" : "A little bit slow"
+  },
+  {
+    "value_min" : 51,
+    "value_max" : 60,
+    "survival_matrix_adjust" : 0,
+    "flavor_text" : "Average intuition"
+  },
+  {
+    "value_min" : 61,
+    "value_max" : 70,
+    "survival_matrix_adjust" : 5,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 71,
+    "value_max" : 80,
+    "survival_matrix_adjust" : 10,
+    "flavor_text" : "Precocious"
+  },
+  {
+    "value_min" : 81,
+    "value_max" : 90,
+    "survival_matrix_adjust" : 15,
+    "flavor_text" : "Your friends say you’re shrewd"
+  },
+  {
+    "value_min" : 91,
+    "value_max" : 100,
+    "survival_matrix_adjust" : 20,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 101,
+    "value_max" : 110,
+    "survival_matrix_adjust" : 25,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 111,
+    "value_max" : 120,
+    "survival_matrix_adjust" : 30,
+    "flavor_text" : "You are sharp as a tack"
+  },
+  {
+    "value_min" : 121,
+    "value_max" : 130,
+    "survival_matrix_adjust" : 35,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 131,
+    "value_max" : 140,
+    "survival_matrix_adjust" : 40,
+    "flavor_text" : "A clutch performer"
+  },
+  {
+    "value_min" : 141,
+    "value_max" : 150,
+    "survival_matrix_adjust" : 45,
+    "flavor_text" : "Sherlock Holmes watch out"
+  }
+]

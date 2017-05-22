@@ -1,0 +1,2 @@
+class VitalStatsTableAgility < ApplicationRecord
+end

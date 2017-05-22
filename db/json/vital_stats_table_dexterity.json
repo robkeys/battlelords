@@ -1,0 +1,107 @@
+[
+  {
+    "value_min":      1,
+    "value_max":      10,
+    "ranged_attack_bonus":   -40,
+    "skill_bonus":    -75,
+    "flavor_text":    "You can’t hold a pen, much less write"
+  },
+  {
+    "value_min":      11,
+    "value_max":      20,
+    "ranged_attack_bonus":   -20,
+    "skill_bonus":    -40,
+    "flavor_text":    "You/re a klutz"
+  },
+  {
+    "value_min":      21,
+    "value_max":      30,
+    "ranged_attack_bonus":   -10,
+    "skill_bonus":    -25,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      31,
+    "value_max":      40,
+    "ranged_attack_bonus":   -5,
+    "skill_bonus":    -10,
+    "flavor_text":    "Don’t try any video games. You’ll get hurt"
+  },
+  {
+    "value_min":      41,
+    "value_max":      50,
+    "ranged_attack_bonus":   -2,
+    "skill_bonus":    -5,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      51,
+    "value_max":      60,
+    "ranged_attack_bonus":   0,
+    "skill_bonus":    0,
+    "flavor_text":    "Average"
+  },
+  {
+    "value_min":      61,
+    "value_max":      70,
+    "ranged_attack_bonus":   0,
+    "skill_bonus":    0,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      71,
+    "value_max":      80,
+    "ranged_attack_bonus":   1,
+    "skill_bonus":    5,
+    "flavor_text":    "You’re good with your hands"
+  },
+  {
+    "value_min":      81,
+    "value_max":      90,
+    "ranged_attack_bonus":   2,
+    "skill_bonus":    10,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      91,
+    "value_max":      100,
+    "ranged_attack_bonus":   4,
+    "skill_bonus":    15,
+    "flavor_text":    "Qualified for brain surgery"
+  },
+  {
+    "value_min":      101,
+    "value_max":      110,
+    "ranged_attack_bonus":   6,
+    "skill_bonus":    20,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      111,
+    "value_max":      120,
+    "ranged_attack_bonus":   8,
+    "skill_bonus":    25,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      121,
+    "value_max":      130,
+    "ranged_attack_bonus":   10,
+    "skill_bonus":    30,
+    "flavor_text":    "Concert pianist"
+  },
+  {
+    "value_min":      131,
+    "value_max":      140,
+    "ranged_attack_bonus":   11,
+    "skill_bonus":    35,
+    "flavor_text":    ""
+  },
+  {
+    "value_min":      141,
+    "value_max":      150,
+    "ranged_attack_bonus":   12,
+    "skill_bonus":    40,
+    "flavor_text":    "Worlds greatest pickpocket"
+  }
+]

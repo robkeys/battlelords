@@ -1,0 +1,152 @@
+[
+  {
+    "value_min" : 1,
+    "value_max" : 10,
+    "system_shock" : 32,
+    "resurrection_percentage" : 30,
+    "deaths_door" : -5,
+    "body_points" : -4,
+    "physical_bonus" : -8,
+    "flavor_text" : "Character can only be a Mutzachan"
+  },
+  {
+    "value_min" : 11,
+    "value_max" : 20,
+    "system_shock" : 38,
+    "resurrection_percentage" : 35,
+    "deaths_door" : -6,
+    "body_points" : -3,
+    "physical_bonus" : -6,
+    "flavor_text" : "Minimum for a Mazian or a Chatilian"
+  },
+  {
+    "value_min" : 21,
+    "value_max" : 30,
+    "system_shock" : 44,
+    "resurrection_percentage" : 40,
+    "deaths_door" : -7,
+    "body_points" : -2,
+    "physical_bonus" : -4,
+    "flavor_text" : "Minimum for a Human or Orion"
+  },
+  {
+    "value_min" : 31,
+    "value_max" : 40,
+    "system_shock" : 50,
+    "resurrection_percentage" : 45,
+    "deaths_door" : -8,
+    "body_points" : -1,
+    "physical_bonus" : -2,
+    "flavor_text" : "Minimum for an Eridani, Zen, or Cizerack"
+  },
+  {
+    "value_min" : 41,
+    "value_max" : 50,
+    "system_shock" : 56,
+    "resurrection_percentage" : 50,
+    "deaths_door" : -9,
+    "body_points" : 0,
+    "physical_bonus" : 0,
+    "flavor_text" : "Minimum for a Phentari"
+  },
+  {
+    "value_min" : 51,
+    "value_max" : 60,
+    "system_shock" : 62,
+    "resurrection_percentage" : 55,
+    "deaths_door" : -10,
+    "body_points" : 0,
+    "physical_bonus" : 2,
+    "flavor_text" : "Minimum for either Python race"
+  },
+  {
+    "value_min" : 61,
+    "value_max" : 70,
+    "system_shock" : 68,
+    "resurrection_percentage" : 60,
+    "deaths_door" : -10,
+    "body_points" : 0,
+    "physical_bonus" : 4,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 71,
+    "value_max" : 80,
+    "system_shock" : 72,
+    "resurrection_percentage" : 65,
+    "deaths_door" : -11,
+    "body_points" : 1,
+    "physical_bonus" : 6,
+    "flavor_text" : ""
+  },
+  {
+    "value_min" : 81,
+    "value_max" : 90,
+    "system_shock" : 78,
+    "resurrection_percentage" : 70,
+    "deaths_door" : -12,
+    "body_points" : 2,
+    "physical_bonus" : 8,
+    "flavor_text" : "Maximum for a Chatilian, Mazian, or Mutzachan"
+  },
+  {
+    "value_min" : 91,
+    "value_max" : 100,
+    "system_shock" : 84,
+    "resurrection_percentage" : 75,
+    "deaths_door" : -13,
+    "body_points" : 3,
+    "physical_bonus" : 10,
+    "flavor_text" : "Maximum for a Human or an Orion Rogue"
+  },
+  {
+    "value_min" : 101,
+    "value_max" : 110,
+    "system_shock" : 90,
+    "resurrection_percentage" : 80,
+    "deaths_door" : -14,
+    "body_points" : 4,
+    "physical_bonus" : 12,
+    "flavor_text" : "Maximum for an Eridani"
+  },
+  {
+    "value_min" : 111,
+    "value_max" : 120,
+    "system_shock" : 93,
+    "resurrection_percentage" : 85,
+    "deaths_door" : -15,
+    "body_points" : 5,
+    "physical_bonus" : 14,
+    "flavor_text" : "Maximum for a Zen or a Gen-Human"
+  },
+  {
+    "value_min" : 121,
+    "value_max" : 130,
+    "system_shock" : 96,
+    "resurrection_percentage" : 90,
+    "deaths_door" : -16,
+    "body_points" : 6,
+    "physical_bonus" : 16,
+    "flavor_text" : "Maximum for a Phentari"
+  },
+  {
+    "value_min" : 131,
+    "value_max" : 140,
+    "system_shock" : 98,
+    "resurrection_percentage" : 95,
+    "deaths_door" : -17,
+    "body_points" : 7,
+    "physical_bonus" : 18,
+    "flavor_text" : "Maximum for a Cizerack or a Python Lizard"
+  },
+  {
+    "value_min" : 141,
+    "value_max" : 150,
+    "system_shock" : 99,
+    "resurrection_percentage" : 100,
+    "deaths_door" : -18,
+    "body_points" : 8,
+    "physical_bonus" : 20,
+    "flavor_text" : "Maximum for Ram Python"
+  }
+]

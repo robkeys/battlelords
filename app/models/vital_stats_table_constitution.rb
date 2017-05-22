@@ -1,0 +1,2 @@
+class VitalStatsTableConstitution < ApplicationRecord
+end

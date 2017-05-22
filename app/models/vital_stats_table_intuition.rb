@@ -1,0 +1,2 @@
+class VitalStatsTableIntuition < ApplicationRecord
+end

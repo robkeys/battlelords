@@ -1,0 +1,2 @@
+class VitalStatsTableIq < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class VitalStatsTableDexterity < ApplicationRecord
+end
