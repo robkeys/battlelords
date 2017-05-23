@@ -1,0 +1,22 @@
+html, body, form, fieldset, table, tr, td, img {
+  margin: 0;
+  padding: 0;
+  font: 100%/150% arial,helvetica,sans-serif;
+}
+
+input, button, select, textarea, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+label {
+  display: block;
+}
+
+input, select, textarea {
+  height: 20px;
+  box-sizing: border-box;
+  display: block;
+}

@@ -12,8 +12,16 @@
 
 ActiveRecord::Schema.define(version: 20170522081529) do
 
-  create_table "characters", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "battlelords", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "race_id"
+    t.integer  "strength_base"
+    t.integer  "dexterity_base"
+    t.integer  "iq_base"
+    t.integer  "agility_base"
+    t.integer  "constitution_base"
+    t.integer  "aggression_base"
+    t.integer  "intuition_base"
+    t.integer  "charisma_base"
     t.integer  "strength"
     t.integer  "dexterity"
     t.integer  "iq"
@@ -57,6 +65,7 @@ ActiveRecord::Schema.define(version: 20170522081529) do
     t.integer  "skill_bonus_charisma"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.index ["race_id"], name: "index_battlelords_on_race_id", using: :btree
   end
 
   create_table "races", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

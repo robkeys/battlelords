@@ -1,7 +1,16 @@
-class CreateCharacters < ActiveRecord::Migration[5.0]
+class CreateBattlelords < ActiveRecord::Migration[5.0]
   def change
-    create_table :characters do |t|
+    create_table :battlelords do |t|
       t.integer :race_id
+
+      t.integer :strength_base
+      t.integer :dexterity_base
+      t.integer :iq_base
+      t.integer :agility_base
+      t.integer :constitution_base
+      t.integer :aggression_base
+      t.integer :intuition_base
+      t.integer :charisma_base
 
       t.integer :strength
       t.integer :dexterity
@@ -49,5 +58,6 @@ class CreateCharacters < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+    add_index :battlelords, :race_id
   end
 end

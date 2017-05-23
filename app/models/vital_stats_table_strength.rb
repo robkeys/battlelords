@@ -1,2 +1,3 @@
 class VitalStatsTableStrength < ApplicationRecord
+
 end

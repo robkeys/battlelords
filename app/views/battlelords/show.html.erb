@@ -1,0 +1,14 @@
+<h1>Battlelord Name</h1>
+<hr>
+<h3>Race: <%= @bl.race.name %></h3>
+
+<table>
+  <% @bl.vs_scores.each_with_index do |score, i| %>
+    <% vs_name = @bl.vs_names[i] %>
+    <tr class="vital_stat <%= vs_name %>">
+      <td><strong><%= "#{vs_name.humanize}: #{score}" %></strong><br>
+      <small><%= "Base: #{@bl.vs_base_scores[i]} + Race: #{@bl.vs_race_adj[i]}" %></small></td>
+      <td><%= eval("render :partial => 'battlelords/partials/ss_table_#{vs_name}', :bl => @bl") %></td>
+    </tr>
+  <% end %>
+</table>

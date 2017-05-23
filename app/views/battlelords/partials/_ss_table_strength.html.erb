@@ -1,0 +1,18 @@
+<table class="nested">
+  <tr>
+    <th>ENC</th>
+    <th>DAM</th>
+    <th>SB</th>
+    <th>MIL. PRESS</th>
+    <th>SQUAT</th>
+    <th>DEAD LIFT</th>
+  </tr>
+  <tr>
+    <td><%= "#{@bl.encumbrance_light}/#{@bl.encumbrance_medium}/#{@bl.encumbrance_severe}" %></td>
+    <td><%= @bl.damage_adjustment %></td>
+    <td><%= @bl.skill_bonus_strength %></td>
+    <td><%= @bl.military_press %></td>
+    <td><%= @bl.squat %></td>
+    <td><%= @bl.dead_lift %></td>
+  </tr>
+</table>
