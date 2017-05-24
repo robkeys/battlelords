@@ -2,13 +2,44 @@
 <hr>
 <h3>Race: <%= @bl.race.name %></h3>
 
-<table>
-  <% @bl.vs_scores.each_with_index do |score, i| %>
-    <% vs_name = @bl.vs_names[i] %>
-    <tr class="vital_stat <%= vs_name %>">
-      <td><strong><%= "#{vs_name.humanize}: #{score}" %></strong><br>
-      <small><%= "Base: #{@bl.vs_base_scores[i]} + Race: #{@bl.vs_race_adj[i]}" %></small></td>
-      <td><%= eval("render :partial => 'battlelords/partials/ss_table_#{vs_name}', :bl => @bl") %></td>
+<div class="main-left-column">
+
+  <table class="parent vital-stat-table">
+
+    <% @bl.vs_scores.each_with_index do |score, i| %>
+      <% vs_name = @bl.vs_names[i] %>
+
+      <tr>
+        <td class="vital-stat <%= vs_name %>">
+          <%= vs_name == 'iq' ? "I.Q. #{score}" : "#{vs_name.humanize} #{score}" %>
+        </td>
+
+        <td class="parent-column">
+          <table class="child derived-stat-table">
+            <%= eval("render :partial => 'battlelords/partials/ds_table_#{vs_name}', :bl => @bl") %>
+          </table>
+        </td>
+      </tr>
+
+    <% end %>
+
+  </table>
+
+  <br>
+
+  <table class="secondary-stat-table">
+    <tr>
+      <th>Terr. Know</th>
+      <th>Mil. Lead</th>
+      <th>Persuasion</th>
+      <th>Bargain</th>
     </tr>
-  <% end %>
-</table>
+    <tr>
+      <td>XX%</td>
+      <td>XX%</td>
+      <td>XX%</td>
+      <td>XX%</td>
+    </tr>
+  </table>
+
+</div>

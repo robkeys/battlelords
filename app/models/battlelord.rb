@@ -73,9 +73,9 @@ class Battlelord < ApplicationRecord
   end
 
   def calculate_aggression_scores
-    self.rage_chance = self.aggression - 80 if self.aggression >= 80 || 0
-    self.suicidal_chance = self.aggression - 105 if self.aggression >= 105 || 0
-    self.panic_chance = 35 - self.aggression if self.aggression <= 35 || 0
+    self.rage_chance = self.aggression >= 80 ? self.aggression - 80 : 0
+    self.suicidal_chance = self.aggression >= 105 ? self.aggression - 105 : 0
+    self.panic_chance = self.aggression <= 35 ? 35 - self.aggression : 0
   end
 
   def calculate_intuition_scores

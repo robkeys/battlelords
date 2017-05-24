@@ -1,5 +1,6 @@
 html, body, form, fieldset, table, tr, td, img {
-  margin: 0;
+  margin: auto;
+  width: 700px;
   padding: 0;
   font: 100%/150% arial,helvetica,sans-serif;
 }
@@ -11,6 +12,10 @@ input, button, select, textarea, optgroup, option {
   font-weight: inherit;
 }
 
+p h1 h2 h3 {
+  margin: auto;
+}
+
 label {
   display: block;
 }
@@ -20,3 +25,39 @@ input, select, textarea {
   box-sizing: border-box;
   display: block;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table tr td, table tr th {
+  border: 1px solid black;
+  padding: 0 2px 0 2px;
+}
+
+.main-left-column {
+  width: 300px;
+  float: left;
+}
+
+.vital-stat-table, .secondary-stat-table {
+  width: inherit;
+  text-align: center;
+
+  .derived-stat-table {
+    width: 100%;
+  }
+}
+
+.parent-column {
+  padding: 0;
+}
+
+.vital-stat {
+  font-weight: bold;
+  font-size: large;
+  line-height: 1em;
+  text-align: center;
+  word-spacing: 999999px;
+}
+
