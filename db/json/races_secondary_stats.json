@@ -1,0 +1,80 @@
+[
+  {
+    "terrestrial_knowledge":      5,
+    "persuasion":                 -10,
+    "military_leadership":        -5,
+    "bargaining":                 -10
+  },
+  {
+    "terrestrial_knowledge":      5,
+    "persuasion":                 0,
+    "military_leadership":        10,
+    "bargaining":                 0
+  },
+  {
+    "terrestrial_knowledge":      15,
+    "persuasion":                 -5,
+    "military_leadership":        20,
+    "bargaining":                  0
+  },
+  {
+    "terrestrial_knowledge":      20,
+    "persuasion":                 10,
+    "military_leadership":        5,
+    "bargaining":                 10
+  },
+  {
+    "terrestrial_knowledge":      15,
+    "persuasion":                 15,
+    "military_leadership":        0,
+    "bargaining":                 25
+  },
+  {
+    "terrestrial_knowledge":      -10,
+    "persuasion":                 -10,
+    "military_leadership":        -20,
+    "bargaining":                 0
+  },
+  {
+    "terrestrial_knowledge":      10,
+    "persuasion":                 0,
+    "military_leadership":        -5,
+    "bargaining":                 5
+  },
+  {
+    "terrestrial_knowledge":      25,
+    "persuasion":                 15,
+    "military_leadership":        0,
+    "bargaining":                 20
+  },
+  {
+    "terrestrial_knowledge":      15,
+    "persuasion":                 -20,
+    "military_leadership":        10,
+    "bargaining":                 0
+  },
+  {
+    "terrestrial_knowledge":      -20,
+    "persuasion":                 -5,
+    "military_leadership":        15,
+    "bargaining":                 0
+  },
+  {
+    "terrestrial_knowledge":      -20,
+    "persuasion":                 -5,
+    "military_leadership":        20,
+    "bargaining":                 0
+  },
+  {
+    "terrestrial_knowledge":      -15,
+    "persuasion":                 10,
+    "military_leadership":        -10,
+    "bargaining":                 0
+  },
+  {
+    "terrestrial_knowledge":      -15,
+    "persuasion":                 10,
+    "military_leadership":        -10,
+    "bargaining":                 0
+  }
+]

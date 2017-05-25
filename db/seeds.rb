@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 races = JSON.parse(File.read(Rails.root + 'db/json/races.json'))
+races_vs = JSON.parse(File.read(Rails.root + 'db/json/races_vital_stats.json'))
+races_ss = JSON.parse(File.read(Rails.root + 'db/json/races_secondary_stats.json'))
+races_smr = JSON.parse(File.read(Rails.root + 'db/json/races_smr_scores.json'))
 strength_table = JSON.parse(File.read(Rails.root + 'db/json/vital_stats_table_strength.json'))
 dexterity_table = JSON.parse(File.read(Rails.root + 'db/json/vital_stats_table_dexterity.json'))
 iq_table = JSON.parse(File.read(Rails.root + 'db/json/vital_stats_table_iq.json'))
@@ -15,8 +18,13 @@ constitution_table = JSON.parse(File.read(Rails.root + 'db/json/vital_stats_tabl
 intuition_table = JSON.parse(File.read(Rails.root + 'db/json/vital_stats_table_intuition.json'))
 charisma_table = JSON.parse(File.read(Rails.root + 'db/json/vital_stats_table_charisma.json'))
 
-races.each do |record|
-  Race.create!(record)
+races.each_with_index do |record, index|
+  new_race = Race.new(record)
+  new_vs = VitalStat.create!(races_vs[index])
+  new_ss = SecondaryStat.create!(races_ss[index])
+  new_smr = SmrScore.create!(races_smr[index])
+  new_race.attributes = { :vital_stat_id => new_vs.id, :secondary_stat_id => new_ss.id, :smr_score_id => new_smr.id }
+  new_race.save!
 end
 
 strength_table.each do |record|

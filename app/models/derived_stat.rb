@@ -1,0 +1,2 @@
+class DerivedStat < ApplicationRecord
+end

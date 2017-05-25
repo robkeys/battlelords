@@ -1,0 +1,2 @@
+class SecondaryStat < ApplicationRecord
+end

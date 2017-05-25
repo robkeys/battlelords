@@ -4,21 +4,21 @@
     <%= f.collection_select :race_id, Race.all, :id, :name  %>
     <br>
     <%= f.label 'strength'  %>
-    <%= f.text_field :strength_base %>
+    <%= f.text_field :strength %>
     <%= f.label 'dexterity'  %>
-    <%= f.text_field :dexterity_base%>
+    <%= f.text_field :dexterity%>
     <%= f.label 'iq'  %>
-    <%= f.text_field :iq_base %>
+    <%= f.text_field :iq %>
     <%= f.label 'agility'  %>
-    <%= f.text_field :agility_base %>
+    <%= f.text_field :agility %>
     <%= f.label 'constitution'  %>
-    <%= f.text_field :constitution_base %>
+    <%= f.text_field :constitution %>
     <%= f.label 'aggression'  %>
-    <%= f.text_field :aggression_base %>
+    <%= f.text_field :aggression %>
     <%= f.label 'intuition'  %>
-    <%= f.text_field :intuition_base %>
+    <%= f.text_field :intuition %>
     <%= f.label 'charisma'  %>
-    <%= f.text_field :charisma_base %>
+    <%= f.text_field :charisma %>
     <br>
     <%= f.submit("Create new Battlelord") %>
 <% end %>

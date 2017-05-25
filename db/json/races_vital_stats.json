@@ -1,0 +1,145 @@
+[
+  {
+    "race_id":                    1,
+    "strength":                   -15,
+    "iq":                         30,
+    "constitution":               -10,
+    "intuition":                  10,
+    "dexterity":                  -10,
+    "agility":                    5,
+    "aggression":                 10,
+    "charisma":                   -25
+  },
+  {
+    "race_id":                    2,
+    "strength":                   15,
+    "iq":                         -5,
+    "constitution":               12,
+    "intuition":                  0,
+    "dexterity":                  -15,
+    "agility":                    35,
+    "aggression":                 20,
+    "charisma":                   5
+  },
+  {
+    "race_id":                    3,
+    "strength":                   10,
+    "iq":                         10,
+    "constitution":               5,
+    "intuition":                  -5,
+    "dexterity":                  5,
+    "agility":                    20,
+    "aggression":                 15,
+    "charisma":                   -10
+  },
+  {
+    "race_id":                    4,
+    "strength":                   8,
+    "iq":                         7,
+    "constitution":               10,
+    "intuition":                  0,
+    "dexterity":                  7,
+    "agility":                    10,
+    "aggression":                 0,
+    "charisma":                   10
+  },
+  {
+    "race_id":                    5,
+    "strength":                   0,
+    "iq":                         0,
+    "constitution":               0,
+    "intuition":                  0,
+    "dexterity":                  0,
+    "agility":                    0,
+    "aggression":                 0,
+    "charisma":                   0
+  },
+  {
+    "race_id":                    6,
+    "strength":                   -20,
+    "iq":                         15,
+    "constitution":               -25,
+    "intuition":                  -5,
+    "dexterity":                  5,
+    "agility":                    30,
+    "aggression":                 -15,
+    "charisma":                   0
+  },
+  {
+    "race_id":                    7,
+    "strength":                   -15,
+    "iq":                         30,
+    "constitution":               -15,
+    "intuition":                  15,
+    "dexterity":                  5,
+    "agility":                    0,
+    "aggression":                 0,
+    "charisma":                   10
+  },
+  {
+    "race_id":                    8,
+    "strength":                   0,
+    "iq":                         0,
+    "constitution":               0,
+    "intuition":                  20,
+    "dexterity":                  20,
+    "agility":                    5,
+    "aggression":                 0,
+    "charisma":                   20
+  },
+  {
+    "race_id":                    9,
+    "strength":                   -5,
+    "iq":                         12,
+    "constitution":               -5,
+    "intuition":                  5,
+    "dexterity":                  25,
+    "agility":                    5,
+    "aggression":                 20,
+    "charisma":                   -35
+  },
+  {
+    "race_id":                    10,
+    "strength":                   30,
+    "iq":                         -10,
+    "constitution":               30,
+    "intuition":                  -10,
+    "dexterity":                  -25,
+    "agility":                    -5,
+    "aggression":                 30,
+    "charisma":                   -30
+  },
+  {
+    "race_id":                    11,
+    "strength":                   40,
+    "iq":                         -20,
+    "constitution":               30,
+    "intuition":                  -15,
+    "dexterity":                  -25,
+    "agility":                    15,
+    "aggression":                 30,
+    "charisma":                   -30
+  },
+  {
+    "race_id":                    12,
+    "strength":                   -5,
+    "iq":                         20,
+    "constitution":               10,
+    "intuition":                  5,
+    "dexterity":                  0,
+    "agility":                    -5,
+    "aggression":                 -25,
+    "charisma":                   20
+  },
+  {
+    "race_id":                    13,
+    "strength":                   -5,
+    "iq":                         20,
+    "constitution":               10,
+    "intuition":                  5,
+    "dexterity":                  0,
+    "agility":                    -5,
+    "aggression":                 15,
+    "charisma":                   20
+  }
+]

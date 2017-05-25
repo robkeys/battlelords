@@ -1,0 +1,2 @@
+class SmrScore < ApplicationRecord
+end

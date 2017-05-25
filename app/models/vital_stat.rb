@@ -1,0 +1,5 @@
+class VitalStat < ApplicationRecord
+
+
+
+end

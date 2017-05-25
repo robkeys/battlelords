@@ -13,18 +13,20 @@ class BattlelordsController < ApplicationController
   def create
     @bl = Battlelord.new(battlelord_params)
     if @bl.save
-      @bl.calculate_scores
+      @bl.create_base_scores
+      @bl.save
       redirect_to(battlelord_path(@bl.id))
     else
       render('new')
     end
+    logger.info(@bl.errors.inspect)
   end
 
   private
 
   def battlelord_params
-    params.require(:battlelord).permit(:id, :race_id, :strength_base, :dexterity_base, :iq_base, :agility_base,
-                                      :constitution_base, :aggression_base, :intuition_base, :charisma_base )
+    params.require(:battlelord).permit(:id, :race_id, :strength, :dexterity, :iq, :agility,
+                                      :constitution, :aggression, :intuition, :charisma )
   end
 
 end
