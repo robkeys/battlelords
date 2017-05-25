@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Race</th>
+    <th></th>
+  </tr>
+  <% @bl.each do |bl| %>
+  <tr>
+    <td><%= bl.id %></td>
+    <td><%= bl.name %></td>
+    <td><%= bl.race.name %></td>
+    <td><%= link_to('View Battlelord', battlelord_path(bl)) %></td>
+  </tr>
+  <% end %>
+</table>
