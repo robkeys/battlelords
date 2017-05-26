@@ -4,11 +4,6 @@ class BattlelordsController < ApplicationController
 
   def index
     @bl = Battlelord.sort_asc
-
-    respond_to do |format|
-      format.html
-      format.js
-    end
   end
 
   def show
@@ -16,11 +11,12 @@ class BattlelordsController < ApplicationController
   end
 
   def new
-    r = [rand(13), rand(45..90), rand(45..90), rand(45..90), rand(45..90), rand(45..90), rand(45..90),
-         rand(45..90), rand(45..90)]
-    @bl = Battlelord.new({ :race_id => r[0], :name => 'Battlelords Name' , :strength => r[1], :dexterity => r[2],
-                         :iq => r[3], :agility => r[4], :constitution => r[5], :aggression => r[6], :intuition => r[7],
-                         :charisma => r[8]})
+    @vs_rolls = [rand(100), rand(100), rand(100), rand(100), rand(100),
+                 rand(100), rand(100), rand(100), rand(100), rand(100)].sort { |x, y| y <=> x }
+    @bl = Battlelord.new({ :name => 'Battlelords Name'})
+    @vs_names = @bl.vs_names
+
+
   end
 
   def create

@@ -1,6 +1,9 @@
-html, body, form, fieldset, table, tr, td, img {
+html, body {
   margin: auto;
   width: 700px;
+}
+
+html, body, form, fieldset, table, tr, td, img {
   padding: 0;
   font: 100%/150% arial,helvetica,sans-serif;
 }
@@ -18,6 +21,7 @@ p h1 h2 h3 {
 
 label {
   display: block;
+  text-align: left;
 }
 
 input, select, textarea {
@@ -27,11 +31,12 @@ input, select, textarea {
 }
 
 table {
+  width: auto;
   border-collapse: collapse;
+  text-align: center;
 }
 
 table tr td, table tr th {
-  border: 1px solid black;
   padding: 0 2px 0 2px;
 }
 
@@ -48,6 +53,9 @@ table tr td, table tr th {
   width: inherit;
   text-align: center;
 
+  tr td, tr th {
+    border: 1px solid black;
+  }
   .derived-stat-table {
     width: 100%;
   }

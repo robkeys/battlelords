@@ -1,24 +1,53 @@
 
+<%= content_tag :div, :class => 'vs-rolls', data: {vs_rolls: @vs_rolls} do %><% end %>
+<%= content_tag :div, :class => 'vs-names', data: {vs_names: @vs_names} do %><% end %>
+
 <%= form_for(@bl, :remote => true) do |f| %>
     <%= f.label :race_id %>
-    <%= f.collection_select :race_id, Race.all, :id, :name  %>
+    <%= f.collection_select :race_id, Race.all, :id, :name, :include_blank => true  %>
+
     <br>
-    <%= f.label 'strength'  %>
-    <%= f.text_field :strength %>
-    <%= f.label 'dexterity'  %>
-    <%= f.text_field :dexterity%>
-    <%= f.label 'iq'  %>
-    <%= f.text_field :iq %>
-    <%= f.label 'agility'  %>
-    <%= f.text_field :agility %>
-    <%= f.label 'constitution'  %>
-    <%= f.text_field :constitution %>
-    <%= f.label 'aggression'  %>
-    <%= f.text_field :aggression %>
-    <%= f.label 'intuition'  %>
-    <%= f.text_field :intuition %>
-    <%= f.label 'charisma'  %>
-    <%= f.text_field :charisma %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <br>
+
+    <table>
+      <tr>
+        <td>
+
+          <%= f.label 'strength' %>
+          <%= f.select :strength,  @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'dexterity' %>
+          <%= f.select :dexterity, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'iq' %>
+          <%= f.select :iq, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'agility' %>
+          <%= f.select :agility, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'constitution' %>
+          <%= f.select :constitution, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'aggression' %>
+          <%= f.select :aggression, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'intuition' %>
+          <%= f.select :intuition, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+          <%= f.label 'charisma' %>
+          <%= f.select :charisma, @vs_rolls, {:include_blank => true}, {:onchange => 'updateList(this.value);'} %>
+
+        </td>
+        <td>
+          Available scores:<br>
+          <div id="rolls-list-target">
+
+            <% @vs_rolls.each do |score| %>
+              <%= score %> <br>
+            <% end %>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+
     <br>
     <%= f.submit("Create new Battlelord") %>
+
 <% end %>

@@ -6,13 +6,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
 
     <div class="top-nav">
       <%= link_to('+ Create Battlelord', new_battlelord_path) %><br>
-      <%= link_to('x Delete Battlelord', battlelord_path(@bl), method: :delete, data: {confirm: 'Are you sure?'}) %>
     </div>
 
     <h1>Battlelord Name</h1>
@@ -22,4 +22,7 @@
 
     <%= yield %>
   </body>
+
+
+
 </html>
