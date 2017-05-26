@@ -22,25 +22,75 @@ function getCookie(cname) {
     return "";
 }
 
-function getSearchParams(k){
-    var p={};
-    location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){p[k]=v});
-    return k?p[k]:p;
+function setCookieVals() {
+    let vsRolls = $(".vs-rolls").data("vs-rolls")
+    setCookie("vsNameList", $(".vs-names").data("vs-names"));
+    setCookie("vsRolls", vsRolls);
+    setCookie("vsRollsLeft", vsRolls)
 }
 
-function updateList(newVal) {
-    var rollsList = '';
-    var vsRolls = getCookie("vsRollsLeft");
-    if (!vsRolls) {
-        vsRolls = $(".vs-rolls").data("vs-rolls");
-        setCookie("vsRolls", vsRolls)
-    } else {
-        vsRolls = vsRolls.split(',').map(Number)
-    }
-    console.log(vsRolls);
-    var i = vsRolls.indexOf(parseInt(newVal));
+function getNames() {
+    let vsNames = getCookie("vsNameList");
+    return vsNames.split(',');
+}
+
+function getRollsLeft() {
+    let rolls = getCookie("vsRollsLeft");
+    return rolls.split(',').map(Number)
+}
+
+function getAllRolls() {
+    let rolls = getCookie("vsRolls");
+    return rolls.split(',').map(Number)
+}
+
+function remRoll(newVal) {
+    let vsRolls = getRollsLeft();
+    let i = vsRolls.indexOf(parseInt(newVal));
     vsRolls.splice(i, 1);
+    return vsRolls
+}
+
+function addRoll(vsNames) {
+    let selRolls = [];
+    while (vsNames.length) { selRolls.push($('#battlelord_' + vsNames.shift()).val())}
+    selRolls = selRolls.map(Number).filter(function(e) {return e !== 0});
+    let vsRolls = getAllRolls();
+    while (selRolls.length) {
+        let i = vsRolls.indexOf(selRolls.pop());
+        vsRolls.splice(i, 1)
+    }
+    return vsRolls
+}
+
+function updateSelectors(vsNames, vsRolls) {
+    while (vsNames.length) {
+        let optionsHTML = "<option value=''></option>";
+        let currRolls = vsRolls.slice(0);
+        let currID = '#battlelord_' + vsNames.pop();
+        let currVal = $(currID).val();
+        if (currVal) {
+            optionsHTML = optionsHTML + "<option value=" + currVal + " selected>" + currVal + "</option>\n"
+        }
+        while (currRolls.length) {
+            currVal = currRolls.shift();
+            optionsHTML = optionsHTML + "<option value=" + currVal + ">" + currVal + "</option>\n"
+        }
+        document.querySelector(currID).innerHTML = optionsHTML
+    }
+}
+
+function updateRolls(newVal) {
+    let rollsList = '';
+    let vsNames = getNames();
+    let vsRolls = null;
+    if (newVal) {
+        vsRolls = remRoll(newVal)
+    } else {
+        vsRolls = addRoll(vsNames.slice(0))
+    }
     setCookie("vsRollsLeft", vsRolls);
-    while (vsRolls.length) {rollsList = rollsList + vsRolls.shift() + "<br>\n"}
-    document.querySelector("#rolls-list-target").innerHTML = rollsList
+    updateSelectors(vsNames.slice(0), vsRolls.slice(0));
+    while (vsRolls.length) { rollsList = rollsList + vsRolls.shift() + "<br>"}
+    document.querySelector("#rolls-list-target").innerHTML = rollsList;
 }

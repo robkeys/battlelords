@@ -11,8 +11,7 @@ class BattlelordsController < ApplicationController
   end
 
   def new
-    @vs_rolls = [rand(100), rand(100), rand(100), rand(100), rand(100),
-                 rand(100), rand(100), rand(100), rand(100), rand(100)].sort { |x, y| y <=> x }
+    @vs_rolls = generate_rolls
     @bl = Battlelord.new({ :name => 'Battlelords Name'})
     @vs_names = @bl.vs_names
 
@@ -45,6 +44,25 @@ class BattlelordsController < ApplicationController
   def battlelord_params
     params.require(:battlelord).permit(:id, :race_id, :name, :strength, :dexterity, :iq, :agility,
                                       :constitution, :aggression, :intuition, :charisma )
+  end
+
+  def generate_rolls
+    # makes sure at least half of the usable scores are over 50
+    continue = true
+    while continue
+      r = 10.times.collect { rand(100) }.push().sort{ |a,z| z <=> a }
+      puts(r)
+      r[0..3].each do |val|
+        if val <= 49
+          continue = true
+          break
+        end
+        continue = false
+      end
+      unless continue
+        return r
+      end
+    end
   end
 
 end

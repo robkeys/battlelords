@@ -22,6 +22,7 @@ p h1 h2 h3 {
 label {
   display: block;
   text-align: left;
+  font-weight: bold;
 }
 
 input, select, textarea {
@@ -38,6 +39,7 @@ table {
 
 table tr td, table tr th {
   padding: 0 2px 0 2px;
+  vertical-align: top;
 }
 
 .top-nav{
@@ -55,6 +57,7 @@ table tr td, table tr th {
 
   tr td, tr th {
     border: 1px solid black;
+    vertical-align: middle;
   }
   .derived-stat-table {
     width: 100%;
