@@ -5,7 +5,8 @@
 
 <%= form_for(@bl, :remote => true) do |f| %>
     <%= f.label :race_id %>
-    <%= f.collection_select :race_id, Race.all, :id, :name, :include_blank => true  %>
+    <%= f.collection_select :race_id, Race.all, :id, :name, {:include_blank => true},
+                            {:onchange => 'displayRaceTable(this.value);'} %>
 
     <br>
     <%= f.label :name %>

@@ -19,6 +19,11 @@ p h1 h2 h3 {
   margin: auto;
 }
 
+h1 {
+  padding-top: 25px;
+  line-height: .1em;
+}
+
 label {
   display: block;
   text-align: left;
@@ -42,8 +47,13 @@ table tr td, table tr th {
   vertical-align: top;
 }
 
-.top-nav{
-  float: right;
+.full-width {
+  width: 700px;
+}
+
+.top-nav {
+  text-align: right;
+  line-height: .25em;
 }
 
 .main-left-column {
@@ -51,7 +61,7 @@ table tr td, table tr th {
   float: left;
 }
 
-.vital-stat-table, .secondary-stat-table {
+.vital-stat-table, .secondary-stat-table, .race-table {
   width: inherit;
   text-align: center;
 
@@ -66,6 +76,26 @@ table tr td, table tr th {
 
 .parent-column {
   padding: 0;
+}
+
+.race-div {
+  position: relative;
+  font-size: .75em;
+}
+
+.race-table{
+  margin: auto;
+  padding: 0 4px 0 4px;
+}
+
+.race-name, .race-table-header {
+  background-color: black;
+  color: #EFEFEF;
+}
+
+.race-name {
+  font-size: 1.2em;
+  font-weight: 900;
 }
 
 .vital-stat {

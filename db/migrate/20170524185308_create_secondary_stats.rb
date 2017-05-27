@@ -5,8 +5,7 @@ class CreateSecondaryStats < ActiveRecord::Migration[5.0]
   def change
     create_table :secondary_stats do |t|
 
-      t.integer :battlelord_id
-      t.integer :race_id
+      t.integer :battlelord_id, :optional => true
 
       t.integer :terrestrial_knowledge
       t.integer :persuasion

@@ -29,6 +29,14 @@ function setCookieVals() {
     setCookie("vsRollsLeft", vsRolls)
 }
 
+function displayRaceTable(raceID) {
+    let elements = document.querySelectorAll('.race-div')
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.display = "none"
+    }
+    $('#race-' + raceID).css("display","block")
+}
+
 function getNames() {
     let vsNames = getCookie("vsNameList");
     return vsNames.split(',');

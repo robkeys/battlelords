@@ -9,7 +9,6 @@ class CreateVitalStats < ActiveRecord::Migration[5.0]
     create_table :vital_stats do |t|
 
       t.integer :battlelord_id, :optional => true
-      t.integer :race_id, :optional => true
 
       t.integer :strength
       t.integer :dexterity

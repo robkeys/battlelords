@@ -9,6 +9,7 @@ class CreateBattlelords < ActiveRecord::Migration[5.0]
       t.integer :base_smr_id
 
       t.string :name
+      t.string :gender
 
       t.integer :strength
       t.integer :dexterity

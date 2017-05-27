@@ -1,0 +1,106 @@
+<% @race.each do |race| %>
+
+  <div class="race-div" id="race-<%= "#{race.id}" %>" style="display:none;">
+    <table class="race-table">
+      <tr>
+        <th colspan="2" class="race-name"><%= race.name %></th>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">Vital Statistic Adjustments</th>
+      </tr>
+      <tr>
+        <td><%= display_adj(race.strength) %> Strength</td>
+        <td><%= display_adj(race.dexterity) %> Dexterity</td>
+      </tr>
+      <tr>
+        <td><%= display_adj(race.iq) %> I.Q.</td>
+        <td><%= display_adj(race.agility) %> Agility</td>
+      </tr>
+      <tr>
+        <td><%= display_adj(race.constitution) %> Constitution</td>
+        <td><%= display_adj(race.aggression) %> Aggression</td>
+      </tr>
+      <tr>
+        <td><%= display_adj(race.intuition) %> Intuition</td>
+        <td><%= display_adj(race.charisma) %> Charisma</td>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">Secondary Statistics</th>
+      </tr>
+      <tr>
+        <td><%= display_adj(race.terrestrial_knowledge) %> Terrestrial Knowledge</td>
+        <td><%= display_adj(race.military_leadership) %> Military Leadership</td>
+      </tr>
+      <tr>
+        <td><%= display_adj(race.persuasion) %> Persuasion</td>
+        <td><%= display_adj(race.persuasion) %> Bargaining</td>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">General Information</th>
+      </tr>
+      <tr>
+        <td>Body Points:  <%= "#{race.body_points_base} + #{race.body_points_dice}" %></td>
+        <td>Movement:  <%= "#{race.movement_mps}/#{race.movement_kmph}/#{race.movement_kmpd}" %></td>
+      </tr>
+      <tr>
+        <td>Height (in):  <%= "#{race.height_base} + #{race.height_dice}" %></td>
+        <td>Weight (lb):  <%= "#{race.weight_base} + (#{race.weight_dice} x 10)" %></td>
+      </tr>
+      <tr>
+        <td>Vision:  <%= "#{display_adj(race.vision)}" %></td>
+        <td>Hearing:  <%= "#{display_adj(race.hearing)}" %></td>
+      </tr>
+      <tr>
+        <td>Smell:  <%= "#{display_adj(race.smell)}" %></td>
+        <td>Starting Money:  <%= "#{race.starting_money_multiplier} x #{race.starting_money_dice}" %></td>
+      </tr>
+      <tr>
+        <td colspan="2">Home Planet:  <%= race.home_planet %></td>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">Survival Matrix Roll</th>
+      </tr>
+      <tr>
+        <td>Chemical:  <%= "#{race.chemical}" %></td>
+        <td>Radiation:  <%= race.radiation %></td>
+      </tr>
+      <tr>
+        <td>Biological:  <%= race.biological %></td>
+        <td>Mental:  <%= race.mental %></td>
+      </tr>
+      <tr>
+        <td>Poison:  <%= race.poison %></td>
+        <td>Sonic:  <%= race.sonic %></td>
+      </tr>
+      <tr>
+        <td>Electricity:  <%= race.electricity %></td>
+        <td>Fire:  <%= race.fire %></td>
+      </tr>
+      <tr>
+        <td>Acid:  <%= race.acid %></td>
+        <td>Cold:  <%= race.cold %></td>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">Primary Occupation</th>
+      </tr>
+      <tr>
+        <td colspan="2"><%= race.primary_occupation %></td>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">Proficiency Points: <%= race.proficiency_points %></th>
+      </tr>
+      <tr>
+        <th colspan="2" class="race-table-header">Vital Statistics Minimum/Maximum</th>
+      </tr>
+      <tr>
+        <td>Strength:  <%= "#{race.strength_min}/#{race.strength_max}" %></td>
+        <td>I.Q.:  <%= "#{race.iq_min}/#{race.iq_max}" %></td>
+      </tr>
+      <tr>
+        <td>Strength:  <%= "#{race.agility_min}/#{race.agility_max}" %></td>
+        <td>I.Q.:  <%= "#{race.constitution_min}/#{race.constitution_max}" %></td>
+      </tr>
+    </table>
+  </div>
+
+<% end %>

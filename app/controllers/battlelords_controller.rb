@@ -3,7 +3,7 @@ class BattlelordsController < ApplicationController
   attr_accessor :battlelord
 
   def index
-    @bl = Battlelord.sort_asc
+    @bl = Battlelord.id_sort
   end
 
   def show
@@ -12,9 +12,9 @@ class BattlelordsController < ApplicationController
 
   def new
     @vs_rolls = generate_rolls
-    @bl = Battlelord.new({ :name => 'Battlelords Name'})
+    @bl = Battlelord.new({ :name => 'Battlelords Name', })
     @vs_names = @bl.vs_names
-
+    @race = Race.id_sort
 
   end
 

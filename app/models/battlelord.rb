@@ -14,7 +14,7 @@ class Battlelord < ApplicationRecord
   has_many :secondary_stats
   has_many :smr_scores
 
-  scope :sort_asc, lambda { order('id ASC')}
+  scope :id_sort, lambda { order('id ASC')}
 
   def vs_names
     %w(strength dexterity iq agility constitution aggression intuition charisma)

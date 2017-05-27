@@ -3,7 +3,6 @@ class CreateSmrScores < ActiveRecord::Migration[5.0]
     create_table :smr_scores do |t|
 
       t.integer :battlelord_id
-      t.integer :race_id
 
       t.integer :chemical
       t.integer :biological
