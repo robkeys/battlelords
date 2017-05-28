@@ -1,7 +1,7 @@
 
 <%= content_tag :div, :class => 'vs-rolls', data: {vs_rolls: @vs_rolls.dup} do %><% end %>
 <%= content_tag :div, :class => 'vs-names', data: {vs_names: @bl.vs_names} do %><% end %>
-<script type="text/javascript">setCookieVals()</script>
+<!--<script type="text/javascript">setCookieVals()</script>-->
 
 <%= form_for @bl, :remote => true do |f| %>
     <%= f.label :race_id %>
@@ -20,28 +20,28 @@
     <%= f.fields_for :base_vs do |ff| %>
       <%= ff.label 'strength' %>
       <%= ff.select :strength, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'dexterity' %>
       <%= ff.select :dexterity, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'iq' %>
       <%= ff.select :iq, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'agility' %>
       <%= ff.select :agility, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'constitution' %>
       <%= ff.select :constitution, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'aggression' %>
       <%= ff.select :aggression, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'intuition' %>
       <%= ff.select :intuition, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
       <%= ff.label 'charisma' %>
       <%= ff.select :charisma, @vs_rolls, {:include_blank => true},
-                   {:onchange => 'updateRolls(this.value);', :class => 'vs-selector'} %>
+                    {:onchange => 'updateRolls();', :class => 'vs-selector'} %>
     <% end %>
         </td>
         <td>
