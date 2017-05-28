@@ -23,7 +23,7 @@ function getCookie(cname) {
 }
 
 function setCookieVals() {
-    let vsRolls = $(".vs-rolls").data("vs-rolls")
+    let vsRolls = $(".vs-rolls").data("vs-rolls");
     setCookie("vsNameList", $(".vs-names").data("vs-names"));
     setCookie("vsRolls", vsRolls);
     setCookie("vsRollsLeft", vsRolls)
@@ -61,7 +61,8 @@ function remRoll(newVal) {
 
 function addRoll(vsNames) {
     let selRolls = [];
-    while (vsNames.length) { selRolls.push($('#battlelord_' + vsNames.shift()).val())}
+    let idPrefix = '#battlelord_base_vs_attributes_';
+    while (vsNames.length) { selRolls.push($(idPrefix + vsNames.shift()).val())}
     selRolls = selRolls.map(Number).filter(function(e) {return e !== 0});
     let vsRolls = getAllRolls();
     while (selRolls.length) {
@@ -75,7 +76,7 @@ function updateSelectors(vsNames, vsRolls) {
     while (vsNames.length) {
         let optionsHTML = "<option value=''></option>";
         let currRolls = vsRolls.slice(0);
-        let currID = '#battlelord_' + vsNames.pop();
+        let currID = '#battlelord_base_vs_attributes_' + vsNames.pop();
         let currVal = $(currID).val();
         if (currVal) {
             optionsHTML = optionsHTML + "<option value=" + currVal + " selected>" + currVal + "</option>\n"

@@ -1,20 +1,55 @@
 class Battlelord < ApplicationRecord
 
   belongs_to :race
-  belongs_to :base_vs, :class_name => 'VitalStat', :foreign_key => :base_vs_id,
-             :optional => true, :dependent => :destroy
-  belongs_to :base_ds, :class_name => 'DerivedStat', :foreign_key => :base_ds_id,
-             :optional => true, :dependent => :destroy
-  belongs_to :base_ss, :class_name => 'SecondaryStat', :foreign_key => :base_ss_id,
-             :optional => true, :dependent => :destroy
-  belongs_to :base_smr, :class_name => 'SmrScore', :foreign_key => :base_smr_id,
-             :optional => true, :dependent => :destroy
+  belongs_to :base_vs, :class_name => 'VitalStat', :foreign_key => :base_vs_id, :dependent => :destroy
+  belongs_to :base_ds, :class_name => 'DerivedStat', :foreign_key => :base_ds_id, :dependent => :destroy
+  belongs_to :base_ss, :class_name => 'SecondaryStat', :foreign_key => :base_ss_id, :dependent => :destroy
+  belongs_to :base_smr, :class_name => 'SmrScore', :foreign_key => :base_smr_id, :dependent => :destroy
   has_many :vital_stats
   has_many :derived_stats
   has_many :secondary_stats
   has_many :smr_scores
 
+  accepts_nested_attributes_for :base_vs
+  accepts_nested_attributes_for :base_ds
+  accepts_nested_attributes_for :base_ss
+  accepts_nested_attributes_for :base_smr
+
   scope :id_sort, lambda { order('id ASC')}
+
+  before_save :calculate_scores
+
+  def strength
+    [self.base_vs.strength, self.race.strength].sum
+  end
+  
+  def dexterity
+    [self.base_vs.dexterity, self.race.dexterity].sum
+  end
+  
+  def iq
+    [self.base_vs.iq, self.race.iq].sum
+  end
+  
+  def agility
+    [self.base_vs.agility, self.race.agility].sum
+  end
+  
+  def constitution
+    [self.base_vs.constitution, self.race.constitution].sum
+  end
+  
+  def aggression
+    [self.base_vs.aggression, self.race.aggression].sum
+  end
+  
+  def intuition
+    [self.base_vs.intuition, self.race.intuition].sum
+  end
+  
+  def charisma
+    [self.base_vs.charisma, self.race.charisma].sum
+  end
 
   def vs_names
     %w(strength dexterity iq agility constitution aggression intuition charisma)
@@ -35,26 +70,7 @@ class Battlelord < ApplicationRecord
      self.race.aggression, self.race.intuition, self.race.charisma]
   end
 
-  def create_base_scores
-    vs = VitalStat.create!(:battlelord_id => self.id, :is_base => true )
-    ds = DerivedStat.create!(:battlelord_id => self.id, :is_base => true )
-    ss = SecondaryStat.create!(:battlelord_id => self.id, :is_base => true )
-    smr = SmrScore.create!(:battlelord_id => self.id, :is_base => true )
-    self.attributes = { :base_vs_id => vs.id, :base_ds_id => ds.id, :base_ss_id => ss.id, :base_smr_id => smr.id }
-    self.create_scores
-    self.calculate_scores
-  end
-
-  def create_scores
-    self.vs_names.each do |vs|
-      eval("self.base_vs.update :#{vs} => self.#{vs}")
-    end
-  end
-
   def calculate_scores
-    self.vs_names.each do |vs|
-      eval("self.#{vs} = self.base_vs.#{vs} + self.race.#{vs}")
-    end
     self.base_ds.calculate_derived_stats(self.vs_scores)
   end
 

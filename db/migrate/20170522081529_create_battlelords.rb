@@ -11,15 +11,6 @@ class CreateBattlelords < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :gender
 
-      t.integer :strength
-      t.integer :dexterity
-      t.integer :iq
-      t.integer :agility
-      t.integer :constitution
-      t.integer :aggression
-      t.integer :intuition
-      t.integer :charisma
-
       t.timestamps
     end
     add_index :battlelords, :race_id
